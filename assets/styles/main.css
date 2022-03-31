@@ -1,0 +1,119 @@
+html {
+    font-size: 5vw;
+}
+
+body {
+    background: #060606;
+    color: white;
+    font-family: 'DisposableDroid BB';
+    font-size: 1.15rem;
+}
+
+main {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 1.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #00F4FF;
+    text-shadow: 0 0 .3rem #00f4ffcc;
+    font-family: 'Karmatic Arcade';
+}
+
+.divider {
+    width: 100%;
+    background: #2F2F2F;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-line {
+    height: 0.86rem;
+    filter: drop-shadow(0 0 1rem #ffffff80);
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #FF0987;
+    text-shadow: 0 0 0.15rem #FF0987;
+    font-size: 1.4rem;
+}
+
+.block__title {
+    margin-bottom: 1.85rem;
+}
+
+.works {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1.15rem;
+    gap: .65rem;
+    grid-auto-flow: dense;
+}
+
+.works__img {
+    width: 100%;
+    image-rendering: pixelated;
+}
+
+.works__link {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: .1rem solid #c700ef;
+    border-image: linear-gradient(to right, #FF0987, #8F00EF) 1;
+}
+
+.works__link>span {
+    padding: 0 .8rem;
+    text-align: center;
+    color: #c700ef;
+    background: linear-gradient(to right, #FF0987, #8F00EF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.works__link, .works__link>span {
+    transition: .4s ease-out;
+}
+
+.works__link:hover {
+    border-color: white;
+    border-image: none;
+}
+
+.works__link:hover>span {
+    -webkit-text-fill-color: unset;
+    color: white;
+}
+
+.block__gh-link {
+    color: white;
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "DisposableDroid BB";
+    src: url("../fonts/DisposableDroidBB.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DisposableDroid BB";
+    src: url("../fonts/DisposableDroidBB_bld.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karmatic Arcade";
+    src: url("../fonts/KarmaticArcade.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
