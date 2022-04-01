@@ -51,6 +51,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.85rem;
 }
 
 .title {
@@ -70,6 +71,7 @@ a {
     grid-template-rows: 1fr 1.15rem;
     gap: .65rem;
     grid-auto-flow: dense;
+    margin-bottom: 1rem;
 }
 
 .works__img {
@@ -108,9 +110,48 @@ a {
     color: white;
 }
 
-.block__gh-link {
+.block__more-link {
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 5rem;
+    padding: .3rem .5rem;
+    background: #C53FA2 linear-gradient(90deg, #ff0a89 0%, #00F4FF 100%);
+    color: #060606;
+    transition: .2s ease-out;
 }
+
+.block__more-link:hover {
+    box-shadow: 0 0 .3rem #C53FA2;
+}
+
+.more-link__img {
+    height: 0.85rem;
+}
+
+.techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tech {
+    display: flex;
+    align-items: baseline;
+    margin-right: .7rem;
+    display: flex;
+    width: fit-content;
+}
+
+.tech__icon {
+    margin-right: .2rem;
+    background: url('../images/star.svg');
+    background-size: contain;
+    width: .6rem;
+    height: .6rem;
+}
+
 
 @media (min-width: 640px) {
     html {

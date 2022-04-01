@@ -19,11 +19,7 @@
     </header>
 
     <div class="divider">
-        <img
-            class="horizontal-line"
-            src="./assets/images/horizontal-line.svg"
-            alt="(( horizonal line ))"
-        >
+        <img class="horizontal-line" src="./assets/images/horizontal-line.svg" alt="(( horizontal line ))">
     </div>
 
     <main>
@@ -48,10 +44,67 @@
                     </a>
                 </div>
 
-                <a href="#" class="block__gh-link">
+                <a href="#" class="block__more-link">
                     <span>more</span>
-                    
+                    <img src="./assets/images/arrow.svg" alt="more" class="more-link__img">
                 </a>
+            </div>
+
+            
+            <div class="block">
+                <div class="block__title title">
+                    Techs
+                </div>
+
+                <div class="block__techs techs">
+                    <!-- <div class="techs__tech tech">
+                        <span class="tech__icon">2</span>
+                        <span class="tech__title">React</span>
+                    </div> -->
+
+                    <script>
+                        const techsArray = [
+                            'React',
+                            'Vue',
+                            'JavaScript',
+                            'Python',
+                            'FireBase',
+                            'Jest',
+                            'GitHub',
+                            'git',
+                            'Bash',
+                            'Linux',
+                            'HTML',
+                            'CSS',
+                            'Saas',
+                            'BEM',
+                            'PHP',
+                            'Laravel',
+                            'Tailwind',
+                            'Web Design'
+                        ]
+
+                        let techs = document.querySelector('.techs')
+
+                        techsArray.forEach((tech, key) => {
+                            let techElem = document.createElement('div')
+                            techElem.classList = 'techs__tech tech'
+                            techElem.setAttribute('key', key)
+
+                            let iconElem = document.createElement('span')
+                            iconElem.classList = 'tech__icon'
+
+                            let titleElem = document.createElement('span')
+                            titleElem.classList = 'tech__title'
+                            titleElem.innerHTML = tech
+
+                            techElem.appendChild(iconElem)
+                            techElem.appendChild(titleElem)
+                            
+                            techs.appendChild(techElem)
+                        })
+                    </script>
+                </div>
             </div>
         </div>
     </main>
