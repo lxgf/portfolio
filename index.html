@@ -63,28 +63,43 @@
                     </div> -->
 
                     <script>
+                        const generateHueDeg = prevValue => {
+                            const min = 0
+                            const max = 359
+                            const hueDeg = Math.floor(Math.random() * (max - min + 1)) + min
+
+                            const minStep = 20
+
+                            if (Math.abs(hueDeg - prevValue) > minStep)
+                                return hueDeg
+                            else
+                                return prevValue + minStep
+                        }
+
                         const techsArray = [
-                            'React',
-                            'Vue',
-                            'JavaScript',
-                            'Python',
-                            'FireBase',
-                            'Jest',
-                            'GitHub',
-                            'git',
-                            'Bash',
-                            'Linux',
                             'HTML',
                             'CSS',
                             'Saas',
                             'BEM',
+                            'Tailwind',
+                            'JavaScript',
+                            'React',
+                            'Vue',
+                            'FireBase',
+                            'Jest',
+                            'git',
+                            'GitHub',
+                            'Linux',
+                            'Bash',
                             'PHP',
                             'Laravel',
-                            'Tailwind',
-                            'Web Design'
+                            'Python',
+                            'Web Design',
                         ]
 
                         let techs = document.querySelector('.techs')
+
+                        let hueDeg = 0
 
                         techsArray.forEach((tech, key) => {
                             let techElem = document.createElement('div')
@@ -93,6 +108,8 @@
 
                             let iconElem = document.createElement('span')
                             iconElem.classList = 'tech__icon'
+                            hueDeg = generateHueDeg(hueDeg)
+                            iconElem.style.filter = `hue-rotate(${hueDeg}deg)`;
 
                             let titleElem = document.createElement('span')
                             titleElem.classList = 'tech__title'
@@ -106,7 +123,34 @@
                     </script>
                 </div>
             </div>
+
+            <div class="block">
+                <div class="block__title title">
+                    Contacts
+                </div>
+
+                <div class="block__contacts contacts">
+                    <img src="./assets/images/avatar.png" alt="It`s me)" class="contact__avatar">
+                    <div class="contacts__contacts-text contacts-text">
+                        <p class="contacts-text__title">Tel:</p>
+
+                        <p class="contacts-text__value">
+                            +7 999 460 86 20
+                        </p>
+                        
+                        <p class="contacts-text__title">Email:</p>
+
+                        <p class="contacts-text__value">
+                            junerkukas@ya.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <img class="footer__image" src="./assets/images/footer-image.svg" alt="(( footer image ))">
+    </footer>
 </body>
 </html>
