@@ -9,6 +9,11 @@ body {
     font-size: 1.15rem;
 }
 
+::selection {
+    background: #FF0987;
+    color: whitesmoke;
+}
+
 main {
     width: 100%;
 }
@@ -40,6 +45,7 @@ a {
     font-size: 1rem;
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 
 .horizontal-line {
@@ -73,6 +79,7 @@ a {
     gap: .65rem;
     grid-auto-flow: dense;
     margin-bottom: 1rem;
+    user-select: none;
 }
 
 .works__img {
@@ -121,6 +128,8 @@ a {
     background: #C53FA2 linear-gradient(90deg, #ff0a89 0%, #00F4FF 100%);
     color: #060606;
     transition: .2s ease-out;
+    user-select: none;
+    margin-bottom: 1rem;
 }
 
 .block__more-link:hover {
@@ -177,11 +186,21 @@ a {
     display: flex;
     justify-content: center;
     height: 2rem;
+    user-select: none;
 }
 
 .footer__image {
     height: 1rem;
     filter: drop-shadow(0 0 1rem #ffffff80);
+}
+
+.block__special-message {
+    font-size: .8rem;
+    width: 70%;
+}
+
+.special-message {
+    text-align: center;
 }
 
 
