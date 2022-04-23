@@ -71,6 +71,10 @@ a {
     margin-bottom: 1.85rem;
 }
 
+.block__works {
+    margin-bottom: 1rem;
+}
+
 .works {
     display: grid;
     width: 100%;
@@ -78,7 +82,6 @@ a {
     grid-template-rows: 1fr 1.15rem;
     gap: .65rem;
     grid-auto-flow: dense;
-    margin-bottom: 1rem;
     user-select: none;
 }
 
@@ -146,10 +149,13 @@ a {
     justify-content: flex-start;
 }
 
+.techs__tech {
+    margin-right: .7rem;
+}
+
 .tech {
     display: flex;
     align-items: baseline;
-    margin-right: .7rem;
     display: flex;
     width: fit-content;
 }
