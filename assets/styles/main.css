@@ -153,6 +153,10 @@ a {
     margin-right: .7rem;
 }
 
+.techs__tech:last-child {
+    margin-right: 0;
+}
+
 .tech {
     display: flex;
     align-items: baseline;
